@@ -13,6 +13,6 @@ public class Instructor extends Employee {
     }
 
     public int getSalary(){
-        return super.getSalary();
+        return super.getSalary()*super.getHours();
     }
 }
