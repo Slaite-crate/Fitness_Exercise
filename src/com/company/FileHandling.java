@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FileHandling {
-    ArrayList<Person> people;
-    ArrayList<Member> members;
-    ArrayList<Employee> employees;
+    private ArrayList<Person> people;
+    private ArrayList<Member> members;
+    private ArrayList<Employee> employees;
 
     public FileHandling(){
         people = new ArrayList<Person>();
