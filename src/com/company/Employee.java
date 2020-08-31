@@ -4,7 +4,8 @@ public class Employee extends Person {
     private int hours;
     private int salary;
 
-    public Employee(){}
+    public Employee() {
+    }
 
     public Employee(String name, String cpr, int hours, int salary) {
         this.name = name;

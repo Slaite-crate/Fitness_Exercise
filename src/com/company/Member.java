@@ -3,18 +3,14 @@ package com.company;
 public class Member extends Person {
     private boolean isBasic;
 
-    public Member(boolean isBasic) {
-        this.isBasic = isBasic;
-    }
-
     public Member(String name, String cpr, boolean isBasic) {
         super(name, cpr);
         this.isBasic = isBasic;
     }
 
-    public String getMemberType(){
+    public String getMemberType() {
         String memberType;
-        if (isBasic == true){
+        if (isBasic) {
             memberType = "Basic";
         } else {
             memberType = "Full";
@@ -22,9 +18,9 @@ public class Member extends Person {
         return memberType;
     }
 
-    public int monthlyFee(){
+    public int monthlyFee() {
         int fee;
-        if (isBasic == true){
+        if (isBasic) {
             fee = 199;
         } else {
             fee = 299;
