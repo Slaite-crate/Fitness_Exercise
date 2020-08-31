@@ -12,6 +12,7 @@ public class Instructor extends Employee {
         super(hours, salary);
     }
 
+    @Override
     public int getSalary(){
         return super.getSalary()*super.getHours();
     }

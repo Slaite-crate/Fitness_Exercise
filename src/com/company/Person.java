@@ -1,8 +1,8 @@
 package com.company;
 
 public class Person {
-    String name;
-    String cpr;
+    protected String name;
+    protected String cpr;
 
     public Person(){}
 
