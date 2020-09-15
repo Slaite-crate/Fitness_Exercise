@@ -6,6 +6,6 @@ public class Main {
         Menu menu = new Menu();
         menu.employees();
         menu.members();
-        menu.people();
+        menu.people2();
     }
 }

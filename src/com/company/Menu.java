@@ -19,6 +19,24 @@ public class Menu {
         System.out.println();
     }
 
+    public void people2() {
+        FileHandling FH = new FileHandling();
+        System.out.println("EMPLOYEES AND MEMBERS");
+        System.out.printf("%-15s", "Name");
+        System.out.println("cpr");
+        System.out.println("**************************************************************************");
+        for (Person ps : FH.readEmployeesList()) {
+            System.out.printf("%-15s", ps.getName());
+            System.out.print(ps.getCpr() + "\n");
+        }
+        for (Person ps : FH.readMembersList()) {
+            System.out.printf("%-15s", ps.getName());
+            System.out.print(ps.getCpr() + "\n");
+        }
+        System.out.println("==========================================================================");
+        System.out.println();
+    }
+
     public void employees() {
         FileHandling FH = new FileHandling();
         System.out.println("EMPLOYEES");
